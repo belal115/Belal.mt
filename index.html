@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<meta charset="utf-8">
+	<title>Belal Mohamed</title>
+</head>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		font-family: cairo;
+	}
+	body {
+		background: url(https://cdn.imageupload.workers.dev/5VXIxoRE_17580.jpg);
+		background-size: cover;
+	}
+	#auto {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		text-align: center;
+		transform: translate(-50%,-50%);
+		font-size: 130%;
+		animation: effect 5s infinite;
+	}
+	@keyframes effect {
+		0% {
+			color : red;
+		}
+		20% {
+			color: purple;
+		}
+		40% {
+			color: blue;
+		}
+		60% {
+			color: #0096ff;
+		}
+		80% {
+			color: #ffe400;
+		}
+		100% {
+			color: #ff6600;
+		}
+	}
+	.footer {
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-40%,0%);
+	}
+	.footer img {
+		width: 20%;
+	}
+</style>
+<body>
+<div id="auto">
+	<li id="first"></li>
+	<li id="second"></li>
+	<li id="third"></li>
+	<li id="fourth"></li>
+	<li id="fifth"></li>
+	<li id="sixth"></li>
+</div>
+<div class="footer">
+	<a href="https://www.facebook.com/X.belal.XX"><img src="https://cdn.imageupload.workers.dev/sVHH7H5Q_facebook.png"></a>
+	<a href="https://www.instagram.com/x_belal_xx/"><img src="https://cdn.imageupload.workers.dev/YSBKASqO_instagram.png"></a>
+	<a href="https://wa.me/+201142486934"><img src="https://cdn.imageupload.workers.dev/Sh8pi7MN_whats.png"></a>
+	<a href="https://www.behance.net/belalmohamed11"><img src="https://cdn.imageupload.workers.dev/7gCzBjBQ_Behance.png"></a>
+</div>
+<script>
+var	
+	first = "Welcome ♥",
+	second = "My name 's Belal",
+	third = "From Egypt",
+	fourth = "Web designer",
+	fifth = "Vector art designer",
+	sixth = "Photoshop designer                 ",
+	a = 0,
+	b = 0,
+	c = 0,
+	d = 0,
+	e = 0,
+	f = 0;
+setInterval(function() {
+	document.getElementById('first').textContent += first[a];
+	a += 1;
+	if (a > first.length - 1) {
+		document.getElementById('first').textContent  = first;
+		}
+}, 200);
+setInterval(function (){
+	if (a > first.length - 1) {
+		document.getElementById('second').textContent += second[b];
+	b += 1;
+	if (b > second.length - 1) {
+		document.getElementById('second').textContent  = second;
+		}
+	}
+}, 200);
+setInterval(function (){
+	if (b > second.length - 1) {
+		document.getElementById('third').textContent += third[c];
+	c += 1;
+	if (c > third.length - 1) {
+		document.getElementById('third').textContent  = third;
+		}
+	}
+}, 200);
+setInterval(function (){
+	if (c > third.length - 1) {
+		document.getElementById('fourth').textContent += fourth[d];
+	d += 1;
+	if (d > fourth.length - 1) {
+		document.getElementById('fourth').textContent  = fourth;
+		}
+	}
+}, 200);
+setInterval(function (){
+	if (d > fourth.length - 1) {
+		document.getElementById('fifth').textContent += fifth[e];
+	e += 1;
+	if (e > fifth.length - 1) {
+		document.getElementById('fifth').textContent  = fifth;
+		}
+	}
+}, 200);
+setInterval(function (){
+	if (e > fifth.length - 1) {
+		document.getElementById('sixth').textContent += sixth[f];
+	f += 1;
+	if (f > sixth.length - 1) {
+		document.getElementById('first').textContent  = "";
+		document.getElementById('second').textContent  = "";
+		document.getElementById('third').textContent  = "";
+		document.getElementById('fourth').textContent  = "";
+		document.getElementById('fifth').textContent  = "";
+		document.getElementById('sixth').textContent  = "";
+	a = 0;
+	b = 0;
+	c = 0;
+	d = 0;
+	e = 0;
+	f = 0;
+		}
+	}
+}, 200);
+</script>
+</body>
+</html>
